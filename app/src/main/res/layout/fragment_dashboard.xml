@@ -1,0 +1,184 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_dash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wolfsoft.invincible.Fragments.DashboardFragment"
+    android:background="@color/abc_color_highlight_material">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="STORFID"
+            android:textColor="@color/primary_text_default_material_light"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Votre solution de gestion d&apos;inventaire"
+            android:id="@+id/textView3"
+            android:textColor="@color/primary_text_default_material_light"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="10dp" />
+        <ScrollView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView3">
+
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_produit"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:paddingTop="25dp"
+                        android:layout_weight="1"
+                        android:text="Produits"
+                        android:textColor="@color/white"
+                        android:drawableTop="@drawable/ic_diamond"
+                        android:backgroundTint="@color/material_deep_teal_500" />
+
+                    <Button
+                        android:id="@+id/btn_tags"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:paddingTop="25dp"
+
+                        android:layout_weight="1"
+                        android:text="Tags"
+                        android:textColor="@color/white"
+                        android:drawableTop="@drawable/ic_antenna"
+                        android:backgroundTint="@color/material_deep_teal_500" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_inventaire"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:paddingTop="25dp"
+
+                        android:layout_weight="1"
+                        android:text="Inventaire"
+                        android:textColor="@color/white"
+                        android:drawableTop="@drawable/ic_inventaire"
+                        android:backgroundTint="@color/material_deep_teal_500" />
+
+                    <Button
+                        android:id="@+id/btn_zone"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:paddingTop="25dp"
+
+                        android:layout_weight="1"
+                        android:text="Zones"
+                        android:textColor="@color/white"
+                        android:drawableTop="@drawable/ic_zone"
+                        android:backgroundTint="@color/material_deep_teal_500" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_vente"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:paddingTop="25dp"
+
+                        android:layout_weight="1"
+                        android:text="Ventes"
+                        android:textColor="@color/white"
+                        android:drawableTop="@drawable/ic_cashier"
+                        android:backgroundTint="@color/material_deep_teal_500" />
+
+                    <Button
+                        android:id="@+id/btn_magasin"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:paddingTop="25dp"
+
+                        android:layout_weight="1"
+                        android:text="Magasin"
+                        android:textColor="@color/white"
+                        android:drawableTop="@drawable/ic_diamond"
+                        android:backgroundTint="@color/material_deep_teal_500" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:paddingTop="25dp"
+                        android:layout_weight="1"
+                        android:text="Comptoir"
+                        android:textColor="@color/white"
+                        android:drawableTop="@drawable/ic_cashier"
+                        android:backgroundTint="@color/material_deep_teal_500" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:paddingTop="25dp"
+                        android:layout_weight="1"
+                        android:text="Mouvement"
+                        android:textColor="@color/white"
+                        android:drawableTop="@drawable/ic_diamond"
+                        android:backgroundTint="@color/material_deep_teal_500" />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</FrameLayout>

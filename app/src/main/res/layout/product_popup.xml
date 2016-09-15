@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fiche d&apos;informations"
+        android:id="@+id/txt_tag"
+        android:layout_marginTop="44dp"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/scrollView4"
+        android:layout_below="@+id/txt_tag"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_below="@+id/txt_tag"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/field_layout"
+            android:layout_weight="0.12"
+            android:measureWithLargestChild="false"
+            android:minHeight="480dp"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_row"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4" android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Editer"
+            android:src="@drawable/ic_edit_product" />
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Chercher"
+            android:src="@drawable/ic_find_product" />
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Affecter"
+            android:src="@drawable/ic_move_product" />
+
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Imprimer"
+            android:src="@drawable/ic_print_product" />
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Supprimer"
+            android:src="@drawable/ic_delete_product"
+            android:id="@+id/btn_delete" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/textView11"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/scrollView4"
+        android:textAlignment="center" />
+
+</RelativeLayout>

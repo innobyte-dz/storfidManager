@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/store"
+            android:title="Accueil" />
+        <item
+            android:id="@+id/nav_historique"
+            android:icon="@drawable/ic_market"
+            android:title="Comptoir" />
+        <item
+            android:id="@+id/nav_article"
+            android:icon="@drawable/cart"
+            android:title="Articles" />
+        <item
+            android:id="@+id/nav_tags"
+            android:icon="@drawable/shopping"
+            android:title="Tags" />
+        <item
+            android:id="@+id/nav_pos"
+            android:icon="@drawable/ic_pos"
+            android:title="Ventes" />
+        <item
+            android:id="@+id/nav_zone"
+            android:icon="@drawable/ic_zones"
+            android:title="Zones" />
+        <item
+            android:id="@+id/nav_inventaire"
+            android:icon="@drawable/ic_business"
+            android:title="Inventaire" />
+        <item
+            android:id="@+id/nav_rapport"
+            android:icon="@drawable/ic_graphic"
+            android:title="Rapports" />
+
+
+    </group>
+
+    <item android:title="Paramétres">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Utilisateures" />
+            <item
+                android:id="@+id/nav_store"
+                android:title="Magasin" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,161 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wolfsoft.invincible.ActivityPos.PosSectionOneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Séléctionner le client"
+            android:id="@+id/textView9"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="wolfsoft.invincible.Fragments.FindArticleFragment"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="@color/ripple_material_light"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_web"/>
+
+                <customfonts.MyEditText
+                    android:id="@+id/article_nom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nom client"
+                    android:letterSpacing="0.0025"
+                    android:inputType="text"
+                    android:textColor="#7000"
+                    android:textColorHint="#7000"
+                    android:background="#00000000"
+                    android:textSize="16dp"
+                    android:padding="15dp" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/ripple_material_light"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Chercher avec le lecteur"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/ripple_material_light"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_web"/>
+
+                <customfonts.MyEditText
+                    android:id="@+id/article_tagcode"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Tag client"
+                    android:letterSpacing="0.0025"
+                    android:inputType="text"
+                    android:textColor="#7000"
+                    android:textColorHint="#7000"
+                    android:background="#00000000"
+                    android:textSize="16dp"
+                    android:padding="15dp" />
+
+                <ToggleButton
+                    android:id="@+id/btn_scan_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_gravity="right" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_suivant"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Suivant >"
+                android:background="@drawable/round1"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/ic_add_image"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Client anonyme >"
+                android:background="@drawable/round1"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/ic_add_image"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
